@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5e710fc-18f4-4fee-93e0-2fd159457bda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mini_spider.py" afterPath="$PROJECT_DIR$/mini_spider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spider.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mini_spider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mini_spider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mini_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mini_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0867052">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spider.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spider.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -42,6 +53,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mini_spider.py" />
+        <option value="$PROJECT_DIR$/spider.conf" />
       </list>
     </option>
   </component>
@@ -60,7 +72,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -148,8 +160,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mini_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0867052">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
