@@ -62,4 +62,3 @@ class MiniSpider(object):
 if __name__ == '__main__':
     mini_spider = MiniSpider()
     mini_spider.crawler("http://news.163.com/18/0406/12/DEN902I70001875O.html")
-

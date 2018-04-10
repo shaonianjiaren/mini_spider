@@ -19,9 +19,7 @@
 """
 
 import codecs
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+import time
 
 class WebPageSave(object):
     """
@@ -29,6 +27,8 @@ class WebPageSave(object):
     """
 
     def __init__(self):
+        self.filepath = "news_%s.html" % (time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()))
+        self.output_head(self.filepath)
         self.datas = []
 
     def save_data(self, data):
@@ -42,15 +42,24 @@ class WebPageSave(object):
         self.datas.append(data)
         return
 
+    def output_head(self, path):
+        """
+        将html头写进去
+        :param path:
+        :return:
+        """
+        fout = codecs.open(path, "w", encoding="gb2312")
+        fout.write("<html>")
+        fout.write("<body>")
+        fout.write("<table>")
+        fout.close()
+
     def output_html(self):
         """
         输出html
         :return:
         """
         fout = codecs.open('/usr/local/nginx/html/baike.html', 'w', encoding='gb2312')
-        fout.write("<html>")
-        fout.write("<body>")
-        fout.write("<table>")
         for data in self.datas:
             try:
                 fout.write("<tr>")
@@ -60,6 +69,15 @@ class WebPageSave(object):
                 fout.write("</tr>")
             except Exception as e:
                 continue
+        fout.close()
+
+    def output_end(self, path):
+        """
+        输出html结束
+        :param path: 文件存储路径
+        :return:
+        """
+        fout = codecs.open(path, "w", encoding="gb2312")
         fout.write("</table>")
         fout.write("</body>")
         fout.write("</html>")
